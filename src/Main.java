@@ -1,3 +1,4 @@
+import javax.print.attribute.standard.JobKOctets;
 import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
@@ -33,6 +34,11 @@ public class Main {
         System.out.println(Elektronik.budgetMax(usb, 16));
         System.out.println(Elektronik.totalCost(99,usb, tastatur));
 
+        //TESTS
+        Tests.test1();
+        Tests.test2();
+        Tests.test3();
+        Tests.test4();
 
     }
 }

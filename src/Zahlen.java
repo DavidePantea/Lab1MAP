@@ -23,10 +23,10 @@ public class Zahlen {
         int min = minNumber(array);
         int big = 0;
         for(int i = 0; i < array.length; i++){
-            big += array[i];
             if(array[i] == min){
                 continue;
             }
+            big += array[i];
         }
         return big;
     }
@@ -35,10 +35,10 @@ public class Zahlen {
         int max = maxNumber(array);
         int big = 0;
         for(int i = 0; i < array.length; i++){
-            big += array[i];
             if(array[i] == max){
                 continue;
             }
+            big += array[i];
         }
         return big;
     }

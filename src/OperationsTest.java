@@ -25,16 +25,30 @@ public class OperationsTest {
         int[] expectedDivision = {0, 1, 1};
         checkResult("Division Test", division, expectedDivision);
 
-        // Test unexpected cases with long numbers
-        int[] longNumber1 = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-        int[] longNumber2 = {1, 0, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-        int[] expectedLongSum = {2, 0, 8, 7, 7, 6, 5, 4, 3, 2, 1};
-        checkResult("Long Number Addition", Operations.add(longNumber1, longNumber2), expectedLongSum);
+        // Test unexpected cases
+        int[] emptyArray = {};
+        int[] zeroArray = {0, 0, 0};
+        int[] largeNumber1 = {9, 9, 9, 9, 9, 9, 9, 9, 9, 9};
+        int[] largeNumber2 = {1};
 
-        int[] longNumber3 = {5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-        int[] longNumber4 = {2};
-        int[] expectedLongDivision = {2, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-        checkResult("Long Number Division", Operations.div(longNumber3, 2), expectedLongDivision);
+        // Test empty array addition
+        int[] emptyArraySum = Operations.add(emptyArray, a);
+        int[] expectedEmptyArraySum = a;
+        checkResult("Empty Array Addition", emptyArraySum, expectedEmptyArraySum);
+
+        // Test zero array subtraction
+        int[] zeroArrayDifference = Operations.subtract(zeroArray, b);
+        int[] expectedZeroArrayDifference = {-4, -5, -6};
+        checkResult("Zero Array Subtraction", zeroArrayDifference, expectedZeroArrayDifference);
+
+        // Test large number addition
+        int[] expectedLargeSum = {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        checkResult("Large Number Addition", Operations.add(largeNumber1, largeNumber2), expectedLargeSum);
+
+        // Test division by zero
+        int[] divisionByZero = Operations.div(a, 0);
+        int[] expectedDivisionByZero = a; // Division by zero should not modify the array
+        checkResult("Division by Zero", divisionByZero, expectedDivisionByZero);
     }
 
     // Helper method to check the result

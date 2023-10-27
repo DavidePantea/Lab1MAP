@@ -44,10 +44,7 @@ public class Main {
         ZahlenTests.testMinNumber();
         ZahlenTests.testMaxNumber();
 
-        OperationsTest.testAdd();
-        OperationsTest.testSubtract();
-        OperationsTest.testMult();
-        OperationsTest.testDiv();
+        OperationsTest.main();
 
     }
 }

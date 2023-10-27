@@ -38,8 +38,7 @@ public class Main {
         MethodeTests.testNichtAusreichendeNoten();
         MethodeTests.testAverage();
 
-        ElektronikTests.testExpensive();
-        ElektronikTests.testCheaper();
+        ElektronikTests.main();
 
         ZahlenTests.testMinNumber();
         ZahlenTests.testMaxNumber();

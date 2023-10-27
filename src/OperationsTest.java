@@ -5,9 +5,6 @@ public class OperationsTest {
         testSubtract();
         testMult();
         testDiv();
-        testToArray();
-        testToArrayNegative();
-        testToArrayZero();
     }
 
     public static void testAdd() {

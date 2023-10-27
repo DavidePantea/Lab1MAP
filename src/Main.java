@@ -40,8 +40,7 @@ public class Main {
 
         ElektronikTests.main();
 
-        ZahlenTests.testMinNumber();
-        ZahlenTests.testMaxNumber();
+        ZahlenTests.main();
 
         OperationsTest.main();
 

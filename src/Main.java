@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Methode notenProzessor = new Methode();
 
-        int[] noten = new int[] { 10, 20, 30, 39, 47, 48, 60 };
+        int[] noten = new int[] { 11, 20, 30, 39, 47, 48, 60 };
 
         //EX 1.
         System.out.println(Arrays.toString(Methode.nichtAusreichendeNoten(noten)));

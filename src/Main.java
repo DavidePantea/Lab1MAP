@@ -35,10 +35,19 @@ public class Main {
         System.out.println(Elektronik.totalCost(99,usb, tastatur));
 
         //TESTS
-        Tests.test1();
-        Tests.test2();
-        Tests.test3();
-        Tests.test4();
+        MethodeTests.testNichtAusreichendeNoten();
+        MethodeTests.testAverage();
+
+        ElektronikTests.testExpensive();
+        ElektronikTests.testCheaper();
+
+        ZahlenTests.testMinNumber();
+        ZahlenTests.testMaxNumber();
+
+        OperationsTest.testAdd();
+        OperationsTest.testSubtract();
+        OperationsTest.testMult();
+        OperationsTest.testDiv();
 
     }
 }

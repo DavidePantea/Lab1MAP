@@ -43,6 +43,9 @@ public class Methode{
 
     public static int average(int[] note){
         int avg = 0;
+        if(note.length == 0){
+            return avg;
+        }
         for (int i = 0; i < note.length; i++) {
             avg += note[i];
         }

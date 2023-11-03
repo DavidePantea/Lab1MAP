@@ -37,6 +37,8 @@ public class Main {
         //TESTS
         MethodeTests.testNichtAusreichendeNoten();
         MethodeTests.testAverage();
+        MethodeTests.testAllRounded();
+        MethodeTests.testMaxRounded();
 
         ElektronikTests.main();
 

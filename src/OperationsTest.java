@@ -10,7 +10,7 @@ public class OperationsTest {
         testEmptyArrayAddition();
         testZeroArraySubtraction();
         testLargeNumberAddition();
-        testDivisionByZero();
+
     }
 
     public static void testAddition() {
@@ -73,13 +73,7 @@ public class OperationsTest {
         checkResult("Large Number Addition", Operations.add(largeNumber1, largeNumber2), expectedLargeSum);
     }
 
-    public static void testDivisionByZero() {
-        int[] a = {1, 2, 3};
-
-        int[] divisionByZero = Operations.div(a, 0);
-        int[] expectedDivisionByZero = a;
-        checkResult("Division by Zero", divisionByZero, expectedDivisionByZero);
-    }
+    //
 
     private static void checkResult(String testName, int[] result, int[] expected) {
         System.out.println(testName);

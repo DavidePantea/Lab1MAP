@@ -44,7 +44,7 @@ public class Main {
 
         ZahlenTests.main();
 
-        OperationsTest.main();
+        OperationsTest.main() ;
 
     }
 }

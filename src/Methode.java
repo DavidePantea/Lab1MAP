@@ -49,7 +49,7 @@ public class Methode{
         for (int i = 0; i < note.length; i++) {
             avg += note[i];
         }
-        return avg/(note.length);
+        return avg/(note.length) ;
     }
 
     public static int[] allRounded(int[] note){

@@ -20,7 +20,7 @@ public class MethodeTests {
         assert avg == 80 : "Test failed for average (expected case)";
 
         // Test case with no grades
-        int[] emptyGrades = {};
+        int[] emptyGrades = {} ;
         int unexpectedAvg = Methode.average(emptyGrades);
         assert unexpectedAvg == 0 : "Test failed for average (unexpected case)";
     }

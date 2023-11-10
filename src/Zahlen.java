@@ -42,7 +42,7 @@ public class Zahlen {
 
     public static int smaller(int[] array){
         if(array.length == 0){
-            return 0;
+            return 0 ;
         }
         int max = maxNumber(array);
         int big = 0;

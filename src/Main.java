@@ -2,7 +2,7 @@ import javax.print.attribute.standard.JobKOctets;
 import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
-        Methode notenProzessor = new Methode();
+        Methode notenProzessor = new Methode() ;
 
         int[] noten = new int[] { 11, 20, 30, 39, 47, 48, 60 };
 

@@ -14,7 +14,7 @@ public class Elektronik {
 
         for (int i = 0; i < tastature.length; i++) {
             if (tastature[i] > max) {
-                max = tastature[i];
+                max = tastature[i] ;
             }
         }
 

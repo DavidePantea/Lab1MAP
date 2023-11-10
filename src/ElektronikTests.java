@@ -34,7 +34,7 @@ public class ElektronikTests {
 
     public static void testTotalCost() {
         int budget = 60;
-        int[] tastature = {30, 40, 20};
+        int[] tastature = {30, 40, 20} ;
         int[] usb = {25, 35, 15};
         int maxTotalCost = Elektronik.totalCost(budget, tastature, usb);
         assert maxTotalCost == 55 : "Test failed for totalCost (expected case)";

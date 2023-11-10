@@ -3,7 +3,7 @@ public class Operations {
 
     public static int[] add(int[] first, int[] second) {
         int maxLength = Math.max(first.length, second.length);
-        int[] result = new int[maxLength + 1];
+        int[] result = new int[maxLength + 1] ;
         int carry = 0;
 
         for (int i = 0; i < maxLength; i++) {

@@ -30,7 +30,7 @@ public class ZahlenTests {
     }
 
     public static void testSmaller() {
-        int[] array = {10, 25, 5, 35, 15};
+        int[] array = {10, 25, 5, 35, 15} ;
         int sumWithoutMax = Zahlen.smaller(array);
         assert sumWithoutMax == 50 : "Test failed for smaller (expected case)";
 

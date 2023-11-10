@@ -42,8 +42,8 @@ public class OperationsTest {
     public static void testDivision() {
         int[] a = {1, 2, 3};
 
-        int[] division = Operations.div(a, 2);
-        int[] expectedDivision = {0, 1, 1};
+        int[] division = Operations.div(a, 2) ;
+        int[] expectedDivision = {0, 1, 1} ;
         checkResult("Division Test", division, expectedDivision);
     }
 
